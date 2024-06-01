@@ -1,7 +1,11 @@
 ﻿@page "/contact"
 
-
-<p>Stuur een bericht</p>
+<h1>Contact</h1>
+<p>Vraag of lid worden? Stuur ons een <a href="mailto: @mailAddresses"> e-mail </a> of stuur een bericht in het onderstaande veld.</p>
+<p>Stuur een bericht!</p>
 <input placeholder="uw e-mail"/>
 <textarea></textarea>
 
+@code{
+    private string mailAddresses ="lqIuV@example.com, lqIuV2@example.com";
+}
