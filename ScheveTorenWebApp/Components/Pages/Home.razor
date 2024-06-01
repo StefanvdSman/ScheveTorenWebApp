@@ -1,0 +1,15 @@
+﻿@page "/"
+@using System.Globalization
+
+<PageTitle>Home</PageTitle>
+
+<h1>Welkom bij Schaakvereniging De Scheve Toren</h1>
+
+We hebben per @date.ToString("d MMMM yyyy", CultureInfo.GetCultureInfo("nl-NL")) <b>@ledenCount</b> leden
+
+@code {
+    private int ledenCount = 0;
+    private readonly DateTime date = DateTime.Now;
+
+}
+
